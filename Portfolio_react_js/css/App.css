@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* ---------------------- General Style --------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: #1f1f38;
+  line-height: 1.6;
+  background-image: url(./assets/bg-texture.png);
+}
+
+/* ---------------------- General Style --------------------------*/
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 8rem;
+}
+
+section h2, section h5 {
+  text-align: center;
+  color: rbga(255, 255, 255, 0.6);
+}
+section h2 {
+  color: #4db5ff;
+  margin-bottom: 3rem;
+}
+
+.text-light {
+  color: rbga(255, 255, 255, 0.6);
+}
+
+a {
+  color: #4db5ff;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+a:hover {
+  color: #fff;
+}
+
+.btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: inline-block;
+  color: #4db5ff;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid #4db5ff;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #1f1f38;
+  border-color: transparent;
+}
+
+img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 86%;
+  }
+  .container .section {
+    margin-top: 6rem;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  .section > h2 {
+    margin-bottom: 2rem;
+  }
+}/*# sourceMappingURL=App.css.map */

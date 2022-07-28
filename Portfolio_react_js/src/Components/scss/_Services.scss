@@ -1,0 +1,55 @@
+.services_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    @include mx-w991{
+        gap: 2rem;
+    }
+    @include mx-w600{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .services{
+        background: $color-bg-variant;
+        border-radius: 0 0 2rem 2rem;
+        border: 1px solid $primary-variant;
+        height: fit-content;
+        transition: $transition;
+        @include mx-w991{
+            height: auto;
+        }
+        &:hover{
+           background: transparent;
+           border-color: $primary-variant;
+           cursor: default;
+        }
+        .services_head{
+            background: $primary;
+            padding: 1rem;
+            border-radius: 0 0 2rem 2rem;
+            box-shadow: 0 2rem 1rem rgba($color: #000000, $alpha: .1);
+            h3{
+                color: $color-bg;
+                font-size: 1rem;
+                text-align: center;
+
+            }
+        }
+        .service_list{
+            padding: 2rem;
+            li{
+                display: flex;
+                gap: 1rem;
+                margin-bottom: .8rem;
+                .service_list_icon{
+                    color: $primary;
+                    margin-top: 2px;
+                }
+            }
+            p{
+                font-size: .9rem;
+            }
+        }
+        }
+    }
+

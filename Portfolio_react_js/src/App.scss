@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "./var";
+
+@mixin mx-w991 {
+    @media (max-width:991px) {
+        @content;
+    }
+}
+@mixin mx-w600 {
+    @media (max-width:600px) {
+        
+        @content;
+    }
+}
+
+
+
+
+
+
+@import "./Components/scss/Header";
+@import "./Components/scss/Nav";
+@import "./Components/scss/About";
+@import "./Components/scss/Experience";
+@import "./Components/scss/Services";
+@import "./Components/scss/Portfolio";
+@import "./Components/scss/Contact";
+@import "./Components/scss/Footer";
+/* ---------------------- General Style --------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .1s linear;
+    list-style: none;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: $white;
+    background: $color-bg;
+    line-height: 1.6;
+    background-image: url(./assets/bg-texture.png);
+}
+/* ---------------------- General Style --------------------------*/
+
+.container{
+    width: $container-width-lg;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+}
+h1{
+    font-size: 2.5rem;
+}
+section{
+    margin-top: 8rem;
+    
+    @include mx-w600(){
+        margin-top: 4rem;
+    }
+}
+
+section{
+    &>h2,&>h5{
+        text-align: center;
+        color: $light;
+    }
+    h2{
+        color: $primary;
+        margin-bottom: 3rem;
+    }
+}
+.text-light{
+    color: $light;
+}
+
+a{
+    color: $primary;
+    transition: $transition;
+    &:hover{
+        color: $white;
+    }
+}
+
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: $primary;
+    padding: 0.75rem 1.2rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    border:  1px solid $primary;
+    transition: $transition;
+    &:hover{
+        background-color: $white;
+        color: $color-bg;
+        border-color: transparent;
+    }
+}
+.btn-primary{
+    background-color: $primary;
+    color: $color-bg;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+//////////////////mediaQueries//////////////////
+
+@media (max-width:1024px) {
+    .container{
+        width: $container-width-md;
+    .section{
+        margin-top: 6rem;
+    }
+    }
+}
+@media (max-width:600px) {
+    .container{
+        width: $container-width-sm;
+    }
+    .section > h2{
+        margin-bottom: 2rem;
+    }
+    }
+//////////////////////mixins for mediaQueries///////////
+
+
