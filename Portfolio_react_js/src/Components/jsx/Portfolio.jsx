@@ -22,7 +22,7 @@ export default function Portfolio() {
               <img src={img3} alt="" />
             </div>
             <h3>Restaurant Website</h3>
-            <a href="https://github.com/sujin-chaudhary/Own-Portfolio.git" className='btn btn-primary' target={_blank} rel="noopener noreferrer">Github</a>    
+            <a href="https://github.com/sujin-chaudhary/Own-Portfolio.git" className='btn btn-primary' target={'_blank'} rel="noreferrer">Github</a>    
           </div>
         </article>
 
@@ -33,7 +33,7 @@ export default function Portfolio() {
               <img src={img2} alt="" />
             </div>
             <h3>Fashion Website</h3>
-            <a href="https://github.com/sujin-chaudhary/Own-Portfolio.git" className='btn btn-primary' target={_blank} rel="noopener noreferrer">Github</a>    
+            <a href="https://github.com/sujin-chaudhary/Own-Portfolio.git" className='btn btn-primary' target={'_blank'} rel="noreferrer">Github</a>    
           </div>
         </article>
 
@@ -44,7 +44,7 @@ export default function Portfolio() {
               <img src={img1} alt="" />
             </div>
             <h3>AnimeOwl Website</h3>
-            <a href="https://github.com/sujin-chaudhary/Own-Portfolio.git" className='btn btn-primary' target={_blank} rel="noopener noreferrer">Github</a>    
+            <a href="https://github.com/sujin-chaudhary/Own-Portfolio.git" className='btn btn-primary' target={'_blank'} rel="noreferrer">Github</a>    
           </div>
         </article>
 
